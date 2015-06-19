@@ -1,0 +1,27 @@
+<!-- Use a templated HTML printing scriptlet to import common stylesheet. -->
+<?!= HtmlService.createHtmlOutputFromFile('Stylesheet').getContent(); ?>
+
+<!-- Below is the HTML code that defines the sidebar element structure. -->
+<div class="sidebar branding-below">
+  <p>
+  Esta opción permite preparar la Hoja de C&aacute;lculo para documentar un 'Proceso de Correcci&oacute;n o Mantenimiento'.
+  </p>
+  <p><strong>Atenci&oacute;n:</strong><br/>
+  Este proceso est&aacute; dise&ntilde;ado para operar sobre una Hoja de C&aacute;lculo en blanco. Es posible que los datos
+  actuales del documento se pierdan, por lo que se recomienda no ejecutar este proceso en un documento que contenga informaci&oacute;n.
+  </p>
+  <div class="block" id="sidebar-button-bar">
+    <button id="sidebar-prepare-button">Preparar Hoja de C&aacute;lculo</button>
+  </div>
+  <div id="sidebar-status"></div>
+</div>
+
+<!-- Enter sidebar bottom-branding below. -->
+<div class="sidebar bottom">
+  <span class="gray branding-text">Script desarrollado por el &Aacute;rea de Investigaci&oacute;n y Desarrollo NOVIS S.A. de C.V.</span>
+</div>
+
+<!-- Use a templated HTML printing scriptlet to import JavaScript. -->
+<?!= HtmlService.createHtmlOutputFromFile('SidebarJavaScript').getContent(); ?>
+
+
